@@ -9,6 +9,7 @@ $darkgrey: #71717a;
 $footerBlack: #3f3f46;
 $lightgrey: #a1a1aa;
 $green: #10b981;
+$greyborder:#F4F4F5;
 
 $tablet: 1024px;
 $mobileL: 768px;
@@ -226,8 +227,8 @@ header {
     }
 
     .header_right {
-      .header_right_img{
-        img{
+      .header_right_img {
+        img {
           display: block;
         }
       }
@@ -268,8 +269,14 @@ header {
 }
 
 main {
+  min-height: 1500px;
   .markets_section {
     .markets {
+      border-radius:$br;
+      padding: 32px;
+      margin-top: 32px;
+      box-shadow: 0px 0px 16px rgba(9, 24, 26, 0.04);
+      
       .markets_nav {
         display: flex;
         align-items: center;
@@ -281,7 +288,7 @@ main {
           cursor: pointer;
 
           &.active {
-            color:$firstBlack;
+            color: $firstBlack;
           }
         }
       }
@@ -290,14 +297,16 @@ main {
         overflow-x: auto;
         table {
           border-collapse: collapse;
-          width: 1136px;
+          width: 1072px;
 
           tr {
+            border-bottom: 1px solid $greyborder;
             th {
               padding: $tablepadding;
               text-align: left;
               color: $firstBlack;
               font-weight: 400;
+              border-top: 1px solid $greyborder;
             }
             td {
               padding: $tablepadding;
@@ -333,23 +342,41 @@ main {
                 color: $greenBlack;
                 cursor: pointer;
                 text-align: center;
+                font-size: 12px;
               }
             }
           }
         }
       }
-     .markets_view_all{
-        display: flex;
-        justify-content: center;
-        align-items:center;
-        gap: 16px;
-        margin-top: 22px;
-       a{
-          color:$firstBlack;
-          text-decoration: none;
-        }
+    }
+    .markets_view_all {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      margin-top: 22px;
 
-     }
+      a {
+        text-decoration: none;
+        color: $firstBlack;
+      }
+    }
+
+    @media screen and (max-width:$mobileXS){
+      .markets_nav{
+        flex-wrap: wrap;
+        margin-bottom: 16px;
+        gap:16px;
+
+        h4{
+          width: 100%;
+          text-align: center;
+          margin: 0px;
+        }
+      }
+      .markets_view_all{
+        flex-wrap: wrap;
+      }
     }
   }
 }
