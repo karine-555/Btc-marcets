@@ -2,6 +2,10 @@
   font-family: "regular";
   src: url(../fonts/Lexend-Regular.ttf);
 }
+@font-face {
+  font-family: "bold";
+  src: url(../fonts/Lexend-ExtraBold.ttf);
+}
 body {
   font-family: "regular", sans-serif;
 }
@@ -160,6 +164,9 @@ header .header .header_left_stars {
           user-select: none;
   color: #27272a;
 }
+header .header .header_right .header_right_img img {
+  display: block;
+}
 @media screen and (max-width: 768px) {
   header .header {
     padding-top: 65px;
@@ -185,6 +192,76 @@ header .header .header_left .header_left_stars {
   header .header .header_right .header_right_img img {
     width: 100%;
   }
+}
+
+main .markets_section .markets .markets_nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+main .markets_section .markets .markets_nav h4 {
+  font-weight: 400;
+  color: #71717a;
+  cursor: pointer;
+}
+main .markets_section .markets .markets_nav h4.active {
+  color: #18181b;
+}
+main .markets_section .markets .markets_table {
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+main .markets_section .markets .markets_table table {
+  border-collapse: collapse;
+  width: 1136px;
+}
+main .markets_section .markets .markets_table table tr th {
+  padding: 16px 0px;
+  text-align: left;
+  color: #18181b;
+  font-weight: 400;
+}
+main .markets_section .markets .markets_table table tr td {
+  padding: 16px 0px;
+  color: #18181b;
+  font-weight: 400;
+}
+main .markets_section .markets .markets_table table tr td span .aud {
+  color: #a1a1aa;
+  font-size: 14px;
+}
+main .markets_section .markets .markets_table table tr td span.up {
+  color: #10b981;
+}
+main .markets_section .markets .markets_table table tr td span.down {
+  color: #f43f5e;
+}
+main .markets_section .markets .markets_table table tr td:nth-child(1), main .markets_section .markets .markets_table table tr td:nth-child(3) {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+main .markets_section .markets .markets_table table tr td a {
+  display: block;
+  text-decoration: none;
+  padding: 16px 0px;
+  background-color: #4cfdc7;
+  border-radius: 4px;
+  color: #01271c;
+  cursor: pointer;
+  text-align: center;
+}
+main .markets_section .markets .markets_view_all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 22px;
+}
+main .markets_section .markets .markets_view_all a {
+  color: #18181b;
+  text-decoration: none;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
