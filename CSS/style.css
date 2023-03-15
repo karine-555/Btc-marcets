@@ -462,6 +462,81 @@ main .wallet_section .wallet_section_blocks .wallet_section_right .wallet_items 
     text-align: center;
   }
 }
+main .vip_section {
+  margin-top: 300px;
+}
+main .vip_section .vip_blocks .vip_top h4 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #18181b;
+  margin: 0px;
+}
+main .vip_section .vip_blocks .vip_top h2 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #18181b;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+main .vip_section .vip_blocks .vip_top p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #27272a;
+}
+main .vip_section .vip_blocks .vip_top .vip_items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 77px;
+  margin-top: 48px;
+}
+main .vip_section .vip_blocks .vip_top .vip_items .vip_item {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+main .vip_section .vip_blocks .vip_top .vip_items .vip_item span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #18181b;
+  text-align: center;
+}
+@media screen and (max-width: 580px) {
+  main .vip_section .vip_blocks .vip_top .vip_items {
+    flex-wrap: wrap;
+  }
+}
+main .vip_section .vip_blocks a {
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  color: #18181b;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  border: 1px solid #18181b;
+  margin-bottom: 48px;
+  padding: 9px 35px;
+  border-radius: 4px;
+  margin-left: 490px;
+  margin-top: 90px;
+}
+main .vip_section .vip_blocks .vip_bottom .vip_bottom_img {
+  margin-top: 64px;
+  padding: 0px 27px;
+}
+main .vip_section .vip_blocks .vip_bottom .vip_bottom_img img {
+  width: 100%;
+}
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document

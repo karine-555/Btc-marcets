@@ -529,9 +529,8 @@ main {
           font-size: min(40px, max(20px + 2vw));
           line-height: 50px;
           letter-spacing: 0.1px;
-          color:$firstBlack;
+          color: $firstBlack;
           margin-top: 16px;
-          
         }
         .wallet_items {
           display: flex;
@@ -565,7 +564,7 @@ main {
     }
 
     @media screen and (max-width: $mobileM) {
-     .wallet_section_right {
+      .wallet_section_right {
         h2 {
           text-align: center;
         }
@@ -578,6 +577,88 @@ main {
         }
       }
     }
+  }
+
+  .vip_section {
+    margin-top: 300px;
+    .vip_blocks {
+      .vip_top {
+        h4 {
+          text-align: center;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 20px;
+          color: $firstBlack;
+          margin: 0px;
+        }
+        h2 {
+          font-weight: 400;
+          font-size: 40px;
+          line-height: 50px;
+          text-align: center;
+          letter-spacing: 0.1px;
+          color: $firstBlack;
+          margin-top: 16px;
+          margin-bottom: 32px;
+        }
+        p {
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 24px;
+          text-align: center;
+          letter-spacing: 0.2px;
+          color: $secondBlack;
+        }
+        .vip_items {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 77px;
+          margin-top: 48px;
+          .vip_item {
+            display: flex;
+            gap: 9px;
+            align-items: center;
+
+            span {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 20px;
+              color: $firstBlack;
+              text-align: center;
+            }
+          }
+          @media screen and(max-width:$mobileM){
+            flex-wrap: wrap;
+          }
+        }
+      }
+      a {
+        text-align: center;
+        display: inline-block;
+        text-decoration: none;
+        color: $firstBlack;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        border: 1px solid $firstBlack;
+        margin-bottom: 48px;
+        padding: 9px 35px;
+        border-radius: 4px;
+        margin-left: 490px;
+        margin-top: 90px;
+      }
+      .vip_bottom {
+        .vip_bottom_img {
+          margin-top: 64px;
+          padding: 0px 27px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+   
   }
 }
 
