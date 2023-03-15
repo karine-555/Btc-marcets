@@ -336,60 +336,128 @@ main .markets_section .why_btc_markets .wbm_items .wbm_item p {
     margin-top: 64px;
   }
 }
+main .trade_section {
+  margin-top: 200px;
+}
 main .trade_section h4 {
   font-weight: 400;
   color: #18181b;
   font-size: 16px;
 }
-main .trade_section .trade__section__blocks {
+main .trade_section .trade_section_blocks {
   display: flex;
   justify-content: space-between;
   gap: 32px;
 }
-main .trade_section .trade__section__blocks .trade_section_left {
+main .trade_section .trade_section_blocks .trade_section_left {
   max-width: 510px;
 }
-main .trade_section .trade__section__blocks .trade_section_left h2 {
+main .trade_section .trade_section_blocks .trade_section_left h2 {
   font-size: min(40px, max(20px + 2vw));
   color: #18181b;
   font-weight: 400;
 }
-main .trade_section .trade__section__blocks .trade_section_left .trade_items {
+main .trade_section .trade_section_blocks .trade_section_left .trade_items {
   margin-top: 64px;
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
 }
-main .trade_section .trade__section__blocks .trade_section_left .trade_items .trade_item {
+main .trade_section .trade_section_blocks .trade_section_left .trade_items .trade_item {
   flex: 1 1 33.3333333333%;
 }
-main .trade_section .trade__section__blocks .trade_section_left .trade_items .trade_item h6 {
+main .trade_section .trade_section_blocks .trade_section_left .trade_items .trade_item h6 {
   font-size: 16px;
   color: #18181b;
   font-weight: 400;
   margin: 8px 0px 18px 0px;
 }
-main .trade_section .trade__section__blocks .trade_section_left .trade_items .trade_item p {
+main .trade_section .trade_section_blocks .trade_section_left .trade_items .trade_item p {
   color: #27272a;
   font-size: 15px;
   line-height: 24px;
 }
-main .trade_section .trade__section__blocks .trade__section__right {
+main .trade_section .trade_section_blocks .trade_section_right {
   flex: 1 1 550px;
 }
-main .trade_section .trade__section__blocks .trade__section__right .trade__section__right__img img {
+main .trade_section .trade_section_blocks .trade_section_right .trade_section_right_img img {
   width: 100%;
 }
 @media screen and (max-width: 1024px) {
-  main .trade_section {
+  main .trade_section .trade_section_blocks {
     flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 580px) {
-  main .trade_section .trade__section__left h2 {
+  main .trade_section .trade_section_blocks .trade_section_left h2 {
     text-align: center;
   }
-  main .trade_section .trade__section__left .trade__items .trade__item {
+  main .trade_section .trade_section_blocks .trade_section_left .trade_items .trade_item {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+}
+main .wallet_section {
+  margin-top: 220px;
+}
+main .wallet_section h4 {
+  color: #18181b;
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 630px;
+}
+main .wallet_section .wallet_section_blocks {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+main .wallet_section .wallet_section_blocks .wallet_section_left {
+  flex: 1 1 550px;
+}
+main .wallet_section .wallet_section_blocks .wallet_section_left .wallet_section_left_img img {
+  width: 100%;
+}
+main .wallet_section .wallet_section_blocks .wallet_section_right {
+  flex: 1 1 550px;
+}
+main .wallet_section .wallet_section_blocks .wallet_section_right h2 {
+  font-weight: 400;
+  font-size: min(40px, max(20px + 2vw));
+  line-height: 50px;
+  letter-spacing: 0.1px;
+  color: #18181b;
+  margin-top: 16px;
+}
+main .wallet_section .wallet_section_blocks .wallet_section_right .wallet_items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-top: 64px;
+}
+main .wallet_section .wallet_section_blocks .wallet_section_right .wallet_items .wallet_item {
+  flex: 1 1 33.3333333333%;
+}
+main .wallet_section .wallet_section_blocks .wallet_section_right .wallet_items .wallet_item h6 {
+  font-size: 16px;
+  color: #18181b;
+  font-weight: 400;
+  margin: 8px 0px 18px 0px;
+}
+main .wallet_section .wallet_section_blocks .wallet_section_right .wallet_items .wallet_item p {
+  color: #27272a;
+  font-size: 15px;
+  line-height: 24px;
+}
+@media screen and (max-width: 1024px) {
+  main .wallet_section {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 580px) {
+  main .wallet_section .wallet_section_right h2 {
+    text-align: center;
+  }
+  main .wallet_section .wallet_section_right .wallet_items .wallet_item {
     flex: 1 1 100%;
     text-align: center;
   }

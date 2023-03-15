@@ -269,169 +269,171 @@ header {
 }
 
 main {
-.markets_section{
-  .markets {
-    border-radius: $br;
-    padding: 32px;
-    margin-top: 32px;
-    box-shadow: 0px 0px 16px rgba(9, 24, 26, 0.04);
+  .markets_section {
+    .markets {
+      border-radius: $br;
+      padding: 32px;
+      margin-top: 32px;
+      box-shadow: 0px 0px 16px rgba(9, 24, 26, 0.04);
 
-    .markets_nav {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 32px;
-      h4 {
-        font-weight: 400;
-        color: $darkgrey;
-        cursor: pointer;
+      .markets_nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        h4 {
+          font-weight: 400;
+          color: $darkgrey;
+          cursor: pointer;
 
-        &.active {
-          color: $firstBlack;
+          &.active {
+            color: $firstBlack;
+          }
         }
       }
-    }
-    .markets_table {
-      overflow-y: hidden;
-      overflow-x: auto;
-      table {
-        border-collapse: collapse;
-        width: 100%;
+      .markets_table {
+        overflow-y: hidden;
+        overflow-x: auto;
+        table {
+          border-collapse: collapse;
+          width: 100%;
 
-        tr {
-          border-bottom: 1px solid $greyborder;
-          th {
-            padding: $tablepadding;
-            text-align: left;
-            color: $firstBlack;
-            font-weight: 400;
-            border-top: 1px solid $greyborder;
-          }
-          td {
-            padding: $tablepadding;
-            color: $firstBlack;
-            font-weight: 400;
-
-            div {
-            }
-            span {
-              & .aud {
-                color: $lightgrey;
-                font-size: 14px;
-              }
-              &.up {
-                color: $green;
-              }
-              &.down {
-                color: $red;
-              }
-            }
-            &:nth-child(1),
-            &:nth-child(3) {
-              display: flex;
-              align-items: center;
-              gap: 16px;
-            }
-            a {
-              display: block;
-              text-decoration: none;
+          tr {
+            border-bottom: 1px solid $greyborder;
+            th {
               padding: $tablepadding;
-              background-color: $primary;
-              border-radius: $br;
-              color: $greenBlack;
-              cursor: pointer;
-              text-align: center;
-              font-size: 12px;
+              text-align: left;
+              color: $firstBlack;
+              font-weight: 400;
+              border-top: 1px solid $greyborder;
+            }
+            td {
+              padding: $tablepadding;
+              color: $firstBlack;
+              font-weight: 400;
+
+              div {
+              }
+              span {
+                & .aud {
+                  color: $lightgrey;
+                  font-size: 14px;
+                }
+                &.up {
+                  color: $green;
+                }
+                &.down {
+                  color: $red;
+                }
+              }
+              &:nth-child(1),
+              &:nth-child(3) {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+              }
+              a {
+                display: block;
+                text-decoration: none;
+                padding: $tablepadding;
+                background-color: $primary;
+                border-radius: $br;
+                color: $greenBlack;
+                cursor: pointer;
+                text-align: center;
+                font-size: 12px;
+              }
             }
           }
         }
-      }
-      @media screen and(max-width:$mobileL) {
-        width: 800px;
-      }
-    }
-  }
-  .markets_view_all {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    margin-top: 22px;
-
-    a {
-      text-decoration: none;
-      color: $firstBlack;
-    }
-  }
-
-  @media screen and (max-width: $mobileXS) {
-    .markets_nav {
-      flex-wrap: wrap;
-      margin-bottom: 16px;
-      gap: 16px;
-
-      h4 {
-        width: 100%;
-        text-align: center;
-        margin: 0px;
+        @media screen and(max-width:$mobileL) {
+          width: 800px;
+        }
       }
     }
     .markets_view_all {
-      flex-wrap: wrap;
-
-      svg:nth-child(1) {
-        width: 100%;
-      }
-    }
-  }
-
-  .why_btc_markets {
-    margin-top: 64px;
-
-    h2 {
-      text-align: center;
-      font-size: min(48px, max(25px + 2vw));
-      font-weight: 400;
-      margin: 0;
-    }
-    .wbm_items {
       display: flex;
       justify-content: center;
-      gap: 64px;
-      margin-top: 128px;
-      .wbm_item {
-        min-width: 250px;
-        text-align: center;
-        .wbm_icon {
-          margin-bottom: 32px;
-        }
+      align-items: center;
+      gap: 16px;
+      margin-top: 22px;
+
+      a {
+        text-decoration: none;
+        color: $firstBlack;
+      }
+    }
+
+    @media screen and (max-width: $mobileXS) {
+      .markets_nav {
+        flex-wrap: wrap;
+        margin-bottom: 16px;
+        gap: 16px;
+
         h4 {
-          margin: 0;
-          color: $firstBlack;
-          font-weight: 400;
-          font-size: 20px;
-        }
-        p {
-          color: $secondBlack;
-          line-height: 24px;
-          letter-spacing: 0.2px;
+          width: 100%;
+          text-align: center;
+          margin: 0px;
         }
       }
-      @media screen and(max-width:$mobileL) {
+      .markets_view_all {
         flex-wrap: wrap;
-        margin-top: 64px;
+
+        svg:nth-child(1) {
+          width: 100%;
+        }
+      }
+    }
+
+    .why_btc_markets {
+      margin-top: 64px;
+
+      h2 {
+        text-align: center;
+        font-size: min(48px, max(25px + 2vw));
+        font-weight: 400;
+        margin: 0;
+      }
+      .wbm_items {
+        display: flex;
+        justify-content: center;
+        gap: 64px;
+        margin-top: 128px;
+        .wbm_item {
+          min-width: 250px;
+          text-align: center;
+          .wbm_icon {
+            margin-bottom: 32px;
+          }
+          h4 {
+            margin: 0;
+            color: $firstBlack;
+            font-weight: 400;
+            font-size: 20px;
+          }
+          p {
+            color: $secondBlack;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+          }
+        }
+        @media screen and(max-width:$mobileL) {
+          flex-wrap: wrap;
+          margin-top: 64px;
+        }
       }
     }
   }
-}
 
-  .trade_section{
+  .trade_section {
+    margin-top: 200px;
     h4 {
       font-weight: 400;
       color: $firstBlack;
       font-size: 16px;
     }
-    .trade__section__blocks {
+
+    .trade_section_blocks {
       display: flex;
       justify-content: space-between;
       gap: 32px;
@@ -468,12 +470,91 @@ main {
           }
         }
       }
-      .trade__section__right {
+      .trade_section_right {
         flex: 1 1 550px;
 
-        .trade__section__right__img {
+        .trade_section_right_img {
           img {
             width: 100%;
+          }
+        }
+      }
+
+      @media screen and (max-width: $tablet) {
+        flex-wrap: wrap;
+      }
+
+      @media screen and (max-width: $mobileM) {
+        .trade_section_left {
+          h2 {
+            text-align: center;
+          }
+
+          .trade_items {
+            .trade_item {
+              flex: 1 1 100%;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .wallet_section {
+    margin-top: 220px;
+    h4 {
+      color: $firstBlack;
+      font-weight: 400;
+      font-size: 16px;
+      margin-left: 630px;
+    }
+    .wallet_section_blocks {
+      display: flex;
+      justify-content: space-between;
+      gap: 32px;
+      .wallet_section_left {
+        flex: 1 1 550px;
+
+        .wallet_section_left_img {
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .wallet_section_right {
+        flex: 1 1 550px;
+        h2 {
+          font-weight: 400;
+          font-size: min(40px, max(20px + 2vw));
+          line-height: 50px;
+          letter-spacing: 0.1px;
+          color:$firstBlack;
+          margin-top: 16px;
+          
+        }
+        .wallet_items {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 32px;
+          margin-top: 64px;
+          .wallet_item {
+            flex: 1 1 calc(100% / 3);
+            .icon {
+              svg {
+              }
+            }
+            h6 {
+              font-size: 16px;
+              color: $firstBlack;
+              font-weight: 400;
+              margin: 8px 0px 18px 0px;
+            }
+            p {
+              color: $secondBlack;
+              font-size: 15px;
+              line-height: 24px;
+            }
           }
         }
       }
@@ -484,13 +565,13 @@ main {
     }
 
     @media screen and (max-width: $mobileM) {
-      .trade__section__left {
+     .wallet_section_right {
         h2 {
           text-align: center;
         }
 
-        .trade__items {
-          .trade__item {
+        .wallet_items {
+          .wallet_item {
             flex: 1 1 100%;
             text-align: center;
           }
