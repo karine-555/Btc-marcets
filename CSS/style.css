@@ -167,6 +167,11 @@ header .header .header_left_stars {
 header .header .header_right .header_right_img img {
   display: block;
 }
+@media screen and (max-width: 800px) {
+  header .header {
+    gap: 32px;
+  }
+}
 @media screen and (max-width: 768px) {
   header .header {
     padding-top: 65px;
@@ -194,6 +199,9 @@ header .header .header_left .header_left_stars {
   }
 }
 
+main .markets_section {
+  margin-bottom: 128px;
+}
 main .markets_section .markets {
   border-radius: 4px;
   padding: 32px;
@@ -337,7 +345,7 @@ main .markets_section .why_btc_markets .wbm_items .wbm_item p {
   }
 }
 main .trade_section {
-  margin-top: 200px;
+  margin-bottom: 128px;
 }
 main .trade_section h4 {
   font-weight: 400;
@@ -536,6 +544,327 @@ main .vip_section .vip_blocks .vip_bottom .vip_bottom_img {
 }
 main .vip_section .vip_blocks .vip_bottom .vip_bottom_img img {
   width: 100%;
+}
+main .start_section {
+  margin-top: 124px;
+}
+main .start_section h2 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: 1px;
+  color: #000000;
+  margin-bottom: 84px;
+}
+main .start_section .start_section_blocks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+}
+main .start_section .start_section_blocks .start_section_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 250px;
+}
+main .start_section .start_section_blocks .start_section_block .start_icon {
+  margin-bottom: 16px;
+}
+main .start_section .start_section_blocks .start_section_block h4 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #18181b;
+  margin-bottom: 16px;
+}
+main .start_section .start_section_blocks .start_section_block p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #27272a;
+  margin-bottom: 46px;
+}
+@media screen and (max-width: 768px) {
+  main .start_section .start_section_blocks {
+    flex-wrap: wrap;
+    gap: 64px;
+  }
+}
+main .start_section .start_footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+main .start_section .start_footer a {
+  display: inline-block;
+  padding: 9px 33px;
+  border-radius: 4px;
+  text-decoration: none;
+  background: #4cfdc7;
+  color: #01271c;
+}
+main .start_section .start_footer .start_section_stars {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #27272a;
+}
+main .trade2 {
+  margin-top: 323px;
+}
+main .trade2 h2 {
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 48px;
+  letter-spacing: 1px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+main .trade2 p {
+  max-width: 505px;
+  margin-bottom: 32px;
+}
+main .trade2 .trade2_img {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 36px;
+}
+main .trade2 .trade2_stars_block {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+main .trade2 .trade2_stars_block .trade2_stars {
+  display: flex;
+  gap: 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #27272a;
+}
+main .trade2 a {
+  text-decoration: none;
+  color: #18181b;
+  font-size: 16px;
+  line-height: 20px;
+}
+main .find {
+  margin-top: 96px;
+}
+main .find .find_line {
+  width: 100%;
+  height: 3px;
+  color: #01271c;
+}
+main .find h3 {
+  text-align: center;
+  margin-top: 128px;
+  margin-bottom: 64px;
+  font-weight: 400;
+  font-size: 31px;
+  line-height: 40px;
+  letter-spacing: 0.1px;
+}
+main .find .find_items {
+  display: flex;
+  gap: 32px;
+}
+main .find .find_items .find_item {
+  margin-bottom: 96px;
+}
+main .find .find_items .find_item .second_line {
+  margin-top: 18px;
+}
+main .find .find_items .find_item .second_line a {
+  padding: 4px 8px;
+  background-color: #4cfdc7;
+  text-decoration: none;
+  color: #18181b;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  margin-left: 24px;
+}
+main .find .find_items .find_item .second_line span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #18181b;
+  margin-left: 24px;
+}
+main .find .find_items .find_item p {
+  min-width: 96px;
+  margin-top: 22px;
+  margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #18181b;
+}
+main .find .find_items .find_item a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #18181b;
+  margin-bottom: 96px;
+}
+main .find .check {
+  text-align: center;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  display: block;
+}
+main .find .find_icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin-top: 64px;
+}
+main .create {
+  margin-top: 240px;
+  padding-left: 64px;
+}
+main .create h2 {
+  max-width: 427px;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 48px;
+  letter-spacing: 1px;
+  color: #000000;
+  margin-bottom: 37px;
+}
+main .create a {
+  display: inline-block;
+  padding: 10px 33px;
+  background-color: #4cfdc7;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #01271c;
+  border: 1px solid #4cfdc7;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+footer .footer {
+  margin-top: 140px;
+}
+footer .footer .footer_logo {
+  margin-bottom: 32px;
+}
+footer .footer .footer_row {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .footer .footer_row .footer_col {
+  width: 20%;
+  padding: 0px 15px;
+}
+footer .footer .footer_row .footer_col ul {
+  list-style: none;
+}
+footer .footer .footer_row .footer_col ul li h5 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #18181b;
+  text-transform: uppercase;
+  margin-bottom: 36px;
+}
+footer .footer .footer_row .footer_col ul li a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  color: #3f3f46;
+  margin-bottom: 16px;
+}
+footer .footer .footer_row .footer_col #footer_btns h5 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #18181b;
+  text-transform: uppercase;
+  margin-bottom: 36px;
+}
+footer .footer .footer_row .footer_col #footer_btns .footer_btns-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+footer .footer .footer_row .footer_col #footer_btns .footer_btns-items #log-in,
+footer .footer .footer_row .footer_col #footer_btns .footer_btns-items #sign-up {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  color: #3f3f46;
+  border: none;
+  background: transparent;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+footer .footer .footer_row .footer_col #footer_btns .footer_btns-items div {
+  margin-bottom: 16px;
+}
+@media screen and (max-width: 768px) {
+  footer .footer .footer_row .footer_col {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  footer .footer .footer_row .footer_col {
+    width: 100%;
+  }
+}
+footer .footer .footer_end_1 {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  margin-bottom: 24px;
+}
+footer .footer .footer_end_1 p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #27272a;
+}
+footer .footer .footer_end_1 .fin {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #27272a;
+}
+footer .footer .footer_end_2 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: #27272a;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
